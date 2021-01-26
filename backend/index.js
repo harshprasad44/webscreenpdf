@@ -1,5 +1,6 @@
 import path from "path";
 import express from "express";
+import cors from "cors";
 import puppeteer from "puppeteer";
 import dotenv from "dotenv";
 import asyncHandler from "express-async-handler";
@@ -8,6 +9,7 @@ import { errorHandler } from "./errorMiddleware.js";
 dotenv.config();
 
 const app = express();
+app.use(cors());
 
 app.get(
   "/pdf",
