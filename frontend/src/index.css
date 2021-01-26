@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+main {
+  min-height: 85vh;
+  color: #4e5d6c;
+}
+
+.darkmode--activated h1,
+.darkmode--activated label {
+  color: orange;
+}
+
+.darkmode--activated .form-control,
+.darkmode--activated .select {
+  border-bottom-color: #fff;
+}
+
+.darkmode--activated .tab-pane {
+  color: white;
+}
+
+.form-control,
+.select {
+  border-bottom-color: orange;
+}
+
+.header-logo {
+  color: orange !important;
+  font-family: "Potta One", cursive;
+}
+
+.list-group-item:hover {
+  background-color: #696969;
+}
+
+footer {
+  color: #4e5d6c;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
