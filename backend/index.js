@@ -1,7 +1,10 @@
 import express from "express";
 import puppeteer from "puppeteer";
+import dotenv from "dotenv";
 import asyncHandler from "express-async-handler";
 import { errorHandler } from "./errorMiddleware.js";
+
+dotenv.config();
 
 const app = express();
 
@@ -47,6 +50,6 @@ app.get(
 
 app.use(errorHandler);
 
-app.listen(5000, () => {
-  console.log("Server Started on port 5000");
+app.listen(process.env.PORT, () => {
+  console.log(`Server Started on port ${process.env.PORT}`);
 });
