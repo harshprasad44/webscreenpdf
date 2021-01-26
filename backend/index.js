@@ -29,9 +29,11 @@ app.get(
 
     const webPage = await browser.newPage();
 
-    await webPage.goto(url, {
-      waitUntil: "networkidle0",
-    });
+    // await webPage.goto(url, {
+    //   waitUntil: "networkidle0",
+    // });
+
+    await webPage.goto(url);
 
     const pdf = await webPage.pdf({
       printBackground,
