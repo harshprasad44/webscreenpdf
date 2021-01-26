@@ -25,16 +25,13 @@ app.get(
 
     const browser = await puppeteer.launch({
       headless: true,
-      args: ["--no-sandbox"],
     });
 
     const webPage = await browser.newPage();
 
-    // await webPage.goto(url, {
-    //   waitUntil: "networkidle0",
-    // });
-
-    await webPage.goto(url);
+    await webPage.goto(url, {
+      waitUntil: "networkidle0",
+    });
 
     const pdf = await webPage.pdf({
       printBackground,
