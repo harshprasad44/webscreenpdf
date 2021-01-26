@@ -27,6 +27,7 @@ const MainScreen = () => {
       url: `/pdf?target=${url}&format=${format}&top=${top}&bottom=${bottom}&left=${left}&right=${right}`,
       method: "GET",
       responseType: "blob", // Important
+      SERVER_URI: "HEROKU_URI",
     })
       .then((response) => {
         FileDownload(response.data, "web2pdf_screenshot.pdf");
