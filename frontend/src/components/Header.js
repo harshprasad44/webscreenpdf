@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/icon-logo-webscreenpdf.png";
 // import { Route } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container } from "react-bootstrap";
@@ -9,7 +10,9 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand className="header-logo">WEB2PDF</Navbar.Brand>
+            <Navbar.Brand className="header-logo">
+              <img src={logo} width="20%" alt="logo"></img>webscreenpdf
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -22,7 +25,7 @@ const Header = () => {
 
               <LinkContainer to="/about">
                 <Nav.Link>
-                  <i className="fas fa-info-circle"></i> About Us
+                  <i className="fas fa-info-circle"></i> About
                 </Nav.Link>
               </LinkContainer>
             </Nav>

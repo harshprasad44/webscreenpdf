@@ -11,9 +11,10 @@ import AboutUsScreen from "./screens/AboutUsScreen";
 
 function App() {
   const options = {
+    bottom: "64px",
     backgroundColor: "#fff",
     label: "🌓",
-    time: "0.4s",
+    time: "0.6s",
     autoMatchOsTheme: false,
   };
 

@@ -29,7 +29,7 @@ const MainScreen = () => {
       responseType: "blob", // Important
     })
       .then((response) => {
-        FileDownload(response.data, "web2pdf_screenshot.pdf");
+        FileDownload(response.data, "webscreenpdf.pdf");
         setLoading(false);
       })
       .catch((error) => {
@@ -64,7 +64,8 @@ const MainScreen = () => {
         <Form>
           <Form.Group controlId="url">
             <Form.Label>
-              Enter your URL below<span style={{ color: "red" }}>*</span> (Please include http:// or https://){" "}
+              Enter your URL below to convert into PDF<span style={{ color: "red" }}>*</span> (Please include http:// or
+              https://){" "}
             </Form.Label>
             <Form.Control
               type="text"
