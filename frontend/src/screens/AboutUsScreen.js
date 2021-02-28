@@ -19,7 +19,7 @@ const AboutUsScreen = () => {
         features that augment or enhance the current Service, including the release of new tools and resources, shall be
         subject to this agreement. Continued use of the Service after any such changes shall constitute your consent to
         such changes. You can review the most current version of this agreement at any time at
-        <a href="https://www.webscreenpdf.com/about"> https://www.webscreenpdf.com/about</a>
+        <a href="http://www.webscreenpdf.com/about"> http://www.webscreenpdf.com/about</a>
       </p>
       <h5>Privacy</h5>
       <ul>
