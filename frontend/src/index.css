@@ -8,6 +8,11 @@ main {
 #root2 {
   text-align: center;
   margin-top: 4px;
+  contain: layout;
+}
+
+.faqScreen {
+  min-height: 15vh;
 }
 
 .darkmode--activated h1,
