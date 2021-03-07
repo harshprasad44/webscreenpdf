@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 
 main {
-  min-height: 85vh;
+  min-height: 50vh;
   color: #4e5d6c;
+}
+
+#root2 {
+  text-align: center;
+  margin-top: 4px;
 }
 
 .darkmode--activated h1,
@@ -35,6 +40,7 @@ main {
 
 footer {
   color: #4e5d6c;
+  margin-top: 25px;
 }
 
 h3 {

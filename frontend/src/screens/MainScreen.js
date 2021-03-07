@@ -128,6 +128,8 @@ const MainScreen = () => {
           </Button>
         </Form>
       )}
+
+      <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
     </FormContainer>
   );
 };
