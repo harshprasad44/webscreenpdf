@@ -24,6 +24,20 @@
     />
     <title>Convert Web to PDF.</title>
 
+    <script id="script">
+      var s = document.createElement("script");
+      s.src = "https://notix.io/ent/current/enot.min.js";
+      s.onload = function (sdk) {
+        sdk.startInstall({
+          appId: "1003fa0336083c949fcf528c83e17d3",
+          step0: "usePrerequest",
+          delay: 0,
+          skinName: "default",
+        });
+      };
+      document.head.append(s);
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T23E5SRY2Z"></script>
     <script>
